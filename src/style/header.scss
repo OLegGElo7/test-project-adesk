@@ -1,0 +1,244 @@
+//цвет текста
+$colorBlack: #2c3038;
+$colorDarkBlue: #051534;
+$colorWhite: #fff;
+//цвет бэк
+$backColorWhite: rgba(255, 255, 255, 0.85);
+$backColorBlue: #0f8ff9;
+$backColorGrey: #01172b1b;
+
+header {
+  background-color: $backColorWhite;
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 30px;
+    .header__wrapper-navigation {
+      display: flex;
+      .header__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 100.21px;
+        img {
+          &:first-child {
+            margin-right: 8.48px;
+          }
+        }
+      }
+      @media (max-width: 1480px) {
+        .header__logo {
+          margin-right: auto;
+        }
+      }
+      .header__navitagion {
+        display: flex;
+        select {
+          color: $colorBlack;
+          margin-right: 30px;
+          height: 24px;
+          border: 0;
+          font-family: "Graphik LCG";
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 110%;
+          appearance: none;
+          background: url("/src/img/select.svg") no-repeat right;
+
+          option {
+            font-family: "Graphik LCG";
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 110%;
+          }
+        }
+        select:hover,
+        select:focus,
+        select:active {
+          background-color: $backColorBlue;
+          border-radius: 4px;
+          transition: 0.5s;
+          color: $colorWhite;
+        }
+        @media (max-width: 1480px) {
+          select {
+            margin-right: auto;
+            font-size: 15px;
+          }
+        }
+        .header__select-possibilities {
+          width: 142px;
+        }
+        @media (max-width: 1480px) {
+          .header__select-possibilities {
+            width: 130px;
+          }
+        }
+        @media (max-width: 1191px) {
+          .header__select-possibilities {
+            width: 107px;
+          }
+        }
+        .header__select-solutions {
+          width: 100px;
+        }
+        @media (max-width: 1480px) {
+          .header__select-solutions {
+            width: 90px;
+          }
+        }
+        @media (max-width: 1191px) {
+          .header__select-solutions {
+            width: 75px;
+          }
+        }
+        .header__select-resources {
+          width: 99px;
+        }
+        @media (max-width: 1480px) {
+          .header__select-resources {
+            width: 85px;
+          }
+        }
+        @media (max-width: 1191px) {
+          .header__select-resources {
+            width: 73px;
+          }
+        }
+        nav {
+          display: flex;
+          align-items: center;
+          ul {
+            display: flex;
+            justify-content: center;
+            width: 215px;
+            display: flex;
+            font-family: "Graphik LCG";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 110%;
+            li {
+              margin-right: 30px;
+              &:last-child {
+                margin-right: 0px;
+              }
+              a {
+                color: $colorBlack;
+                text-decoration: none;
+              }
+            }
+            a:hover,
+            a:focus,
+            a:active {
+              background-color: $backColorBlue;
+              border-radius: 4px;
+              transition: 0.5s;
+              color: $colorWhite;
+            }
+            @media (max-width: 1480px) {
+              li {
+                margin-right: 5px;
+              }
+            }
+          }
+          @media (max-width: 1480px) {
+            ul {
+              width: auto;
+              font-size: 15px;
+            }
+            &:last-child {
+              margin-right: 2px;
+            }
+          }
+        }
+      }
+    }
+
+    .header__buttons {
+      display: flex;
+      button {
+        margin-right: 10px;
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+
+      .haeder__button-demo {
+        width: 236px;
+        height: 42px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        color: $colorDarkBlue;
+        font-family: "Graphik LCG";
+        padding: 10px 18px 10px 15px;
+        display: flex;
+        align-items: center;
+        border: 0;
+        border-radius: 4px;
+        background-color: $backColorWhite;
+        img {
+          margin-right: 8px;
+        }
+      }
+      .haeder__button-demo:hover,
+      .haeder__button-demo:focus,
+      .haeder__button-demo:active {
+        background: $backColorGrey;
+        transition: 0.5s;
+      }
+
+      @media (max-width: 1480px) {
+        .haeder__button-demo {
+          width: 160px;
+          padding: 0;
+          font-size: 15px;
+        }
+      }
+
+      .haeder__button-open {
+        width: 94px;
+        color: $colorDarkBlue;
+        padding: 12px 20px;
+        font-family: "Graphik LCG";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+        border-radius: 4px;
+        border: 1px solid rgba(5, 21, 52, 0.3);
+        background-color: $backColorWhite;
+      }
+      .haeder__button-open:hover,
+      .haeder__button-open:focus,
+      .haeder__button-open:active {
+        background: $backColorGrey;
+        transition: 0.5s;
+      }
+      .haeder__button-registr {
+        width: 221px;
+        height: 42px;
+        color: $colorWhite;
+        padding: 12px 20px;
+        border-radius: 4px;
+        border: 0;
+        background-color: $backColorBlue;
+        font-family: "Graphik LCG";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 100%;
+      }
+      .haeder__button-registr:hover,
+      .haeder__button-registr:focus,
+      .haeder__button-registr:active {
+        opacity: 0.6;
+        transition: 0.5s;
+      }
+    }
+  }
+  @media (max-width: 1191px) {
+    .header__wrapper {
+      padding: 18px 5px;
+    }
+  }
+}

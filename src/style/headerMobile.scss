@@ -36,8 +36,8 @@ $boxColorBlue: rgb(16, 113, 177);
       padding: 0;
       width: 36px;
       height: 36px;
-      margin-top: 30px;
-      margin-left: 200px;
+      margin-top: 20px;
+      margin-left: 170px;
 
       .headerMobile__icon {
         width: 36px;
@@ -117,6 +117,7 @@ $boxColorBlue: rgb(16, 113, 177);
       border: 0;
       border-radius: 4px;
       background-color: $backColorWhite;
+      margin-bottom: 15px;
       img {
         margin-right: 8px;
       }
@@ -127,5 +128,68 @@ $boxColorBlue: rgb(16, 113, 177);
       transition: 0.5s;
       transform: scale(1.2);
     }
+    //
+    .headerMobile__button-open {
+      width: 94px;
+      padding: 12px 20px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 100%;
+      border-radius: 4px;
+      border: 1px solid rgba(5, 21, 52, 0.3);
+      background-color: $backColorWhite;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 990px) {
+      .headerMobile__button-open {
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      .headerMobile__button-open {
+        display: block;
+      }
+    }
+    .headerMobile__button-open:hover,
+    .headerMobile__button-open:focus,
+    .headerMobile__button-open:active {
+      transition: 0.5s;
+      transform: scale(1.2);
+    }
+    .headerMobile__button-registr {
+      width: 221px;
+      height: 42px;
+      color: $colorWhite;
+      padding: 12px 20px;
+      border-radius: 4px;
+      border: 0;
+      background-color: $backColorBlue;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 100%;
+    }
+    @media (max-width: 990px) {
+      .headerMobile__button-registr {
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      .headerMobile__button-registr {
+        display: block;
+      }
+    }
+    .headerMobile__button-registr:hover,
+    .headerMobile__button-registr:focus,
+    .headerMobile__button-registr:active {
+      transition: 0.5s;
+      transform: scale(1.2);
+    }
   }
+  @media (max-width: 600px) {
+    .headerMobile__navitagion {
+      height: 450px;
+    }
+  }
+
+  //
 }

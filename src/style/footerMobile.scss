@@ -1,0 +1,236 @@
+.footerMobile__info {
+  display: none;
+  .footerMobile__info-wrapper {
+    .footerMobile__info-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      color: $colorWhite;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 120%;
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 120%;
+      }
+      .footerMobile__open-one {
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__open-two {
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__open-three {
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__open-four {
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__open-five {
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__close-one {
+        display: none;
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__close-two {
+        display: none;
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__close-three {
+        display: none;
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__close-four {
+        display: none;
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+      .footerMobile__close-five {
+        display: none;
+        cursor: pointer;
+        background-color: $backColorDarkBlue;
+        padding: 0;
+        border: 0;
+      }
+    }
+    .footerMomile_li-one {
+      display: none;
+      ul {
+        li {
+          color: $colorWhite;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 120%;
+          a {
+            cursor: pointer;
+            color: $colorBlueGrey;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+          }
+          a:hover,
+          a:focus,
+          a:active {
+            color: $colorWhite;
+            transition: 0.5s;
+          }
+          &:last-child {
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+
+    .footerMomile_li-two {
+      display: none;
+      ul {
+        li {
+          color: $colorWhite;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 120%;
+          a {
+            cursor: pointer;
+            color: $colorBlueGrey;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+          }
+          a:hover,
+          a:focus,
+          a:active {
+            color: $colorWhite;
+            transition: 0.5s;
+          }
+          &:last-child {
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+    .footerMomile_li-three {
+      display: none;
+      ul {
+        li {
+          color: $colorWhite;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 120%;
+          a {
+            cursor: pointer;
+            color: $colorBlueGrey;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+          }
+          a:hover,
+          a:focus,
+          a:active {
+            color: $colorWhite;
+            transition: 0.5s;
+          }
+          &:last-child {
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+    .footerMomile_li-four {
+      display: none;
+      ul {
+        li {
+          color: $colorWhite;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 120%;
+          a {
+            cursor: pointer;
+            color: $colorBlueGrey;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+          }
+          a:hover,
+          a:focus,
+          a:active {
+            color: $colorWhite;
+            transition: 0.5s;
+          }
+          &:last-child {
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+    .footerMomile_li-five {
+      display: none;
+      ul {
+        li {
+          color: $colorWhite;
+          margin-bottom: 15px;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 120%;
+          a {
+            cursor: pointer;
+            color: $colorBlueGrey;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 120%;
+          }
+          a:hover,
+          a:focus,
+          a:active {
+            color: $colorWhite;
+            transition: 0.5s;
+          }
+          &:last-child {
+            margin-bottom: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .footerMobile__info {
+    display: block;
+  }
+}

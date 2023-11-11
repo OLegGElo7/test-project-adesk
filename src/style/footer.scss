@@ -12,33 +12,57 @@ footer {
   background-color: $backColorDarkBlue;
   .footer__wrapper {
     padding-top: 60px;
-
     .footer__logo {
       display: flex;
       align-items: center;
       margin-bottom: 60px;
-      img {
-        margin-right: 15px;
-        width: 44px;
-        height: 44px;
-      }
-      p {
-        color: $colorWhite;
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 120%;
-        span {
+      .footer__logo-wrapper {
+        display: flex;
+        img {
+          margin-right: 15px;
+          width: 44px;
+          height: 44px;
+        }
+        p {
+          color: $colorWhite;
           font-size: 22px;
-          font-weight: 600;
+          font-weight: 400;
           line-height: 120%;
+          span {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 120%;
+          }
+        }
+      }
+
+      .footer__logo-social {
+        display: none;
+        img {
+          margin-left: 30px;
+          width: 24px;
+          height: 24px;
+        }
+      }
+      @media (max-width: 990px) {
+        .footer__logo-social {
+          display: block;
+        }
+      }
+      @media (max-width: 600px) {
+        .footer__logo-social {
+          display: none;
         }
       }
     }
     @media (max-width: 990px) {
       .footer__logo {
         margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
       }
     }
+
     .footer__info {
       .footer__info-wrapper {
         display: grid;
@@ -94,6 +118,11 @@ footer {
         }
       }
     }
+    @media (max-width: 600px) {
+      .footer__info {
+        display: none;
+      }
+    }
     .footer__links {
       padding-top: 100px;
       padding-bottom: 20px;
@@ -106,6 +135,11 @@ footer {
           &:last-child {
             margin-right: 0;
           }
+        }
+      }
+      @media (max-width: 600px) {
+        .footer__links-payMethods {
+          display: none;
         }
       }
       .footer__links-apps {
@@ -142,7 +176,7 @@ footer {
         .footer-button__links-google {
           button {
             padding: 0;
-            width: 120px;
+            width: 133px;
             height: 44px;
             background-color: $backColorDarkBlue;
             border-radius: 8px;
@@ -174,6 +208,11 @@ footer {
         padding-top: 80px;
       }
     }
+    @media (max-width: 600px) {
+      .footer__links {
+        padding-top: 15px;
+      }
+    }
     .footer__bottom {
       display: flex;
       justify-content: space-between;
@@ -191,6 +230,26 @@ footer {
           &:last-child {
             margin-right: 0px;
           }
+        }
+        @media (max-width: 990px) {
+          p {
+            &:first-child {
+              color: $colorWhite;
+            }
+          }
+        }
+        @media (max-width: 600px) {
+          p {
+            margin-bottom: 10px;
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+      @media (max-width: 600px) {
+        .footer__bottom-title {
+          display: block;
         }
       }
       .footer__bottom-social {
@@ -211,13 +270,25 @@ footer {
           }
         }
       }
+      @media (max-width: 990px) {
+        .footer__bottom-social {
+          display: none;
+        }
+      }
+      @media (max-width: 600px) {
+        .footer__bottom-social {
+          display: block;
+          margin-bottom: 40px;
+        }
+      }
     }
-  }
-  @media (max-width: 600px) {
-    .footer__wrapper {
-      padding-top: 50px;
-      .footer__links-payMethods {
-        display: none;
+    @media (max-width: 600px) {
+      .footer__bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25px;
       }
     }
   }

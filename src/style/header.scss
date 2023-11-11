@@ -47,6 +47,13 @@ $backColorGrey: #01172b1b;
           margin-right: 5px;
         }
       }
+      @media (max-width: 600px) {
+        .header__logo {
+          margin-right: 96px;
+          margin-left: 135.6px;
+        }
+      }
+
       .header__navitagion {
         display: flex;
         select {
@@ -210,6 +217,8 @@ $backColorGrey: #01172b1b;
         }
       }
     }
+    //
+
     .header__buttons {
       display: flex;
       align-items: center;
@@ -228,7 +237,7 @@ $backColorGrey: #01172b1b;
           }
         }
       }
-      .haeder__button-demo {
+      .header__button-demo {
         width: 236px;
         height: 42px;
         font-size: 18px;
@@ -244,23 +253,23 @@ $backColorGrey: #01172b1b;
           margin-right: 8px;
         }
       }
-      .haeder__button-demo:hover,
-      .haeder__button-demo:focus,
-      .haeder__button-demo:active {
+      .header__button-demo:hover,
+      .header__button-demo:focus,
+      .header__button-demo:active {
         background: $backColorGrey;
         transition: 0.5s;
         transform: scale(1.2);
       }
 
       @media (max-width: 1480px) {
-        .haeder__button-demo {
+        .header__button-demo {
           width: 195px;
           padding: 0;
           font-size: 17px;
         }
       }
       @media (max-width: 1100px) {
-        .haeder__button-demo {
+        .header__button-demo {
           width: 150px;
           font-size: 13px;
           img {
@@ -269,12 +278,12 @@ $backColorGrey: #01172b1b;
         }
       }
       @media (max-width: 990px) {
-        .haeder__button-demo {
+        .header__button-demo {
           display: none;
         }
       }
 
-      .haeder__button-open {
+      .header__button-open {
         width: 94px;
         padding: 12px 20px;
         font-size: 18px;
@@ -284,14 +293,19 @@ $backColorGrey: #01172b1b;
         border: 1px solid rgba(5, 21, 52, 0.3);
         background-color: $backColorWhite;
       }
-      .haeder__button-open:hover,
-      .haeder__button-open:focus,
-      .haeder__button-open:active {
+      @media (max-width: 600px) {
+        .header__button-open {
+          display: none;
+        }
+      }
+      .header__button-open:hover,
+      .header__button-open:focus,
+      .header__button-open:active {
         background: $backColorGrey;
         transition: 0.5s;
         transform: scale(1.2);
       }
-      .haeder__button-registr {
+      .header__button-registr {
         width: 221px;
         height: 42px;
         color: $colorWhite;
@@ -304,13 +318,18 @@ $backColorGrey: #01172b1b;
         line-height: 100%;
       }
       @media (max-width: 990px) {
-        .haeder__button-registr {
+        .header__button-registr {
           margin-right: 30px;
         }
+        @media (max-width: 600px) {
+          .header__button-registr {
+            display: none;
+          }
+        }
       }
-      .haeder__button-registr:hover,
-      .haeder__button-registr:focus,
-      .haeder__button-registr:active {
+      .header__button-registr:hover,
+      .header__button-registr:focus,
+      .header__button-registr:active {
         opacity: 0.6;
         transition: 0.5s;
         transform: scale(1.2);
@@ -342,7 +361,13 @@ $backColorGrey: #01172b1b;
         color: $colorWhite;
       }
     }
-    ///
+  }
+  @media (max-width: 600px) {
+    .header__wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 @media (max-width: 1060px) {

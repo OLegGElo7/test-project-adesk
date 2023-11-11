@@ -8,6 +8,10 @@ module.exports = {
     hot: true,
   },
 
+  performance: {
+    hints: false,
+  },
+
   entry: path.resolve(__dirname, "src", "index.js"),
 
   mode: "production",

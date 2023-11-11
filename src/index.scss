@@ -1,13 +1,29 @@
 @import "./style/reset.scss";
 @import "./style/header.scss";
+@import "./style/home.scss";
+@import "./style/about.scss";
+@import "./style/footer.scss";
+@import "./style/mobile.scss";
 
+//цвет текста
+$colorDarkBlue: #051534;
 //Общие стили
 .wrapper {
-  max-width: 1110px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media (max-width: 990px) {
+  .wrapper {
+    max-width: 708px;
+  }
+}
+body {
+  box-sizing: border-box;
+  font-family: "Graphik LCG", sans-serif;
+  color: $colorDarkBlue;
 }
 
 //img {
